@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://shaowb.com/friends/index.html</loc>
+    
+    <lastmod>2019-10-19T10:48:47.909Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://shaowb.com/contact/index.html</loc>
+    
+    <lastmod>2019-10-19T10:48:18.661Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://shaowb.com/about/index.html</loc>
+    
+    <lastmod>2019-10-19T10:46:57.039Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://shaowb.com/2018/01/22/2017-conclusion/</loc>
     
     <lastmod>2019-10-19T02:58:23.597Z</lastmod>
@@ -16,13 +37,6 @@
   </url>
   
   <url>
-    <loc>http://shaowb.com/about/index.html</loc>
-    
-    <lastmod>2019-10-19T02:58:23.597Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://shaowb.com/archives/index.html</loc>
     
     <lastmod>2019-10-19T02:58:23.597Z</lastmod>
@@ -31,20 +45,6 @@
   
   <url>
     <loc>http://shaowb.com/categories/index.html</loc>
-    
-    <lastmod>2019-10-19T02:58:23.597Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://shaowb.com/contact/index.html</loc>
-    
-    <lastmod>2019-10-19T02:58:23.597Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://shaowb.com/friends/index.html</loc>
     
     <lastmod>2019-10-19T02:58:23.597Z</lastmod>
     
