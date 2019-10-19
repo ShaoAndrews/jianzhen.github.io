@@ -16,13 +16,6 @@
   </url>
   
   <url>
-    <loc>http://shaowb.com/about/index.html</loc>
-    
-    <lastmod>2019-10-19T02:58:23.597Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://shaowb.com/archives/index.html</loc>
     
     <lastmod>2019-10-19T02:58:23.597Z</lastmod>
@@ -30,7 +23,21 @@
   </url>
   
   <url>
+    <loc>http://shaowb.com/about/index.html</loc>
+    
+    <lastmod>2019-10-19T02:58:23.597Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://shaowb.com/categories/index.html</loc>
+    
+    <lastmod>2019-10-19T02:58:23.597Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://shaowb.com/tags/index.html</loc>
     
     <lastmod>2019-10-19T02:58:23.597Z</lastmod>
     
@@ -45,13 +52,6 @@
   
   <url>
     <loc>http://shaowb.com/friends/index.html</loc>
-    
-    <lastmod>2019-10-19T02:58:23.597Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://shaowb.com/tags/index.html</loc>
     
     <lastmod>2019-10-19T02:58:23.597Z</lastmod>
     
