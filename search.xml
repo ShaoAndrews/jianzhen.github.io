@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>新文章测试</title>
+      <link href="/2019/10/19/xin-wen-zhang-ce-shi/"/>
+      <url>/2019/10/19/xin-wen-zhang-ce-shi/</url>
+      
+        <content type="html"><![CDATA[<h1 id="这是一个测试网页"><a href="#这是一个测试网页" class="headerlink" title="这是一个测试网页"></a>这是一个测试网页</h1><pre class="line-numbers language-c++"><code class="language-c++">#include<iostream>using namespace std;int main(){    cout << "I'm a test cpp"<<endl;}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>$\Latex$</p><p>$$p(x) = x^2 - 1$$</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> cshell </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>二零一七年终总结</title>
       <link href="/2018/01/22/2017-conclusion/"/>
       <url>/2018/01/22/2017-conclusion/</url>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://shaowb.com/"/>
-  <updated>2019-10-19T02:58:23.597Z</updated>
+  <updated>2019-10-19T11:34:36.732Z</updated>
   <id>http://shaowb.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>新文章测试</title>
+    <link href="http://shaowb.com/2019/10/19/xin-wen-zhang-ce-shi/"/>
+    <id>http://shaowb.com/2019/10/19/xin-wen-zhang-ce-shi/</id>
+    <published>2019-10-19T11:30:34.000Z</published>
+    <updated>2019-10-19T11:34:36.732Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;这是一个测试网页&quot;&gt;&lt;a href=&quot;#这是一个测试网页&quot; class=&quot;headerlink&quot; title=&quot;这是一个测试网页&quot;&gt;&lt;/a&gt;这是一个测试网页&lt;/h1&gt;&lt;pre class=&quot;line-numbers language-c++&quot;&gt;&lt;code
+        
+      
+    
+    </summary>
+    
+      <category term="python" scheme="http://shaowb.com/categories/python/"/>
+    
+    
+      <category term="cshell" scheme="http://shaowb.com/tags/cshell/"/>
+    
+  </entry>
   
   <entry>
     <title>二零一七年终总结</title>
