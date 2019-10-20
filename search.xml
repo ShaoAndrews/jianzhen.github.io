@@ -4,23 +4,23 @@
   
     
     <entry>
-      <title>新文章测试</title>
-      <link href="/2019/10/19/xin-wen-zhang-ce-shi/"/>
-      <url>/2019/10/19/xin-wen-zhang-ce-shi/</url>
+      <title>测试密码</title>
+      <link href="/2019/10/20/ce-shi-mi-ma/"/>
+      <url>/2019/10/20/ce-shi-mi-ma/</url>
       
-        <content type="html"><![CDATA[<h1 id="这是一个测试网页"><a href="#这是一个测试网页" class="headerlink" title="这是一个测试网页"></a>这是一个测试网页</h1><pre class="line-numbers language-c++"><code class="language-c++">#include<iostream>using namespace std;int main(){    cout << "I'm a test cpp"<<endl;}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>$\Latex$</p><p>$$p(x) = x^2 - 1$$</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="测试开文件"><a href="#测试开文件" class="headerlink" title="测试开文件"></a>测试开文件</h1><pre class="line-numbers language-c++"><code class="language-c++">#include<iostream>int main(){    cout << "ok"<<endl;    return 0;}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
       
       
       <categories>
           
-          <category> python </category>
+          <category> shell </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> cshell </tag>
+            <tag> python </tag>
             
         </tags>
       
