@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>非root权限安装pip和其他python包</title>
+      <link href="/2019/10/21/fei-root-quan-xian-an-zhuang-pip-he-qi-ta-python-bao/"/>
+      <url>/2019/10/21/fei-root-quan-xian-an-zhuang-pip-he-qi-ta-python-bao/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>当拿到服务器账号却没有root权限的时候，导致很多安装受到阻碍。这里给出一种创建虚拟环境的办法进行解决，主要原理在于圈定自己的一个运行范围。</p></blockquote><h1 id="安装pip"><a href="#安装pip" class="headerlink" title="安装pip"></a>安装<code>pip</code></h1><pre class="line-numbers language-shell"><code class="language-shell">wget https://bootstrap.pypa.io/get-pip.pypython get-pip.py --user<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>这里的python如果是2.7就按照的是<code>pip2</code>， 如果是3就安装<code>pip3</code>。</p><p>一定记得使用 –user 参数否则你还是没有权限。</p><p>安装完成后会在家目录下生成 <code>.local</code> 文件夹，里面有<code>bin</code>和<code>lib</code>， <code>bin</code> 里就有我们需要的<code>pip</code>、<code>easy_install</code><br>如果想直接使用，需要加入环境变量。</p><pre class="line-numbers language-shell"><code class="language-shell">export PATH=~/.local/bin:$PATH<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h1 id="安装其他包"><a href="#安装其他包" class="headerlink" title="安装其他包"></a>安装其他包</h1><p>有了<code>pip</code>我们就可以很方便的安装其他包了</p><pre class="line-numbers language-shell"><code class="language-shell">pip install --user virtualenv（包名称）<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>这样你需要的包就会被安装在 <code>~/.local</code> 目录。</p><h1 id="虚拟环境-virtualenv"><a href="#虚拟环境-virtualenv" class="headerlink" title="虚拟环境 virtualenv"></a>虚拟环境 <code>virtualenv</code></h1><p>很多时候我们不同的项目需要的包的版本不同，我们可以采用<code>virtualenv</code>做一个独立的生态系统。</p><pre class="line-numbers language-shell"><code class="language-shell"># 安装virtualenvpip install --user virtualenvvirtualenv envsource env/bin/activate<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>这样就进入了一个独立的python环境，再用pip安装就可以了。具体的使用可以搜索。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 安装 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>测试密码</title>
       <link href="/2019/10/20/ce-shi-mi-ma/"/>
       <url>/2019/10/20/ce-shi-mi-ma/</url>
