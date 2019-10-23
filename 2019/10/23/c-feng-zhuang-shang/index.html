@@ -4,17 +4,18 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="test, Deep learning Verify computation">
+    <meta name="keywords" content="C++封装(上), Deep learning Verify computation">
     <meta name="baidu-site-verification" content>
     <meta name="google-site-verification" content>
     <meta name="360-site-verification" content>
     <meta name="description" content="
-# 2017
-![](1.jpg)
-![](2.jpg)
-![](3.jpg)
+类的定义与对象实例化
+string类型及属性封装
+类外定义
+构造函数与初始化列表
+析构函数
 
-2018">
+类和对象类是一个抽象的概念，而对象是一个具体的概念。类是根据对象抽象而来，根据不同的目的，同一对象抽象出来的类也可能不尽相同。下面有一个简单的类">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -22,7 +23,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>test | shaowb</title>
+    <title>C++封装(上) | shaowb</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -297,13 +298,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/25.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        test
+                        C++封装(上)
                     </div>
                 </div>
             </div>
@@ -414,8 +415,8 @@
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/随笔/" target="_blank">
-                            <span class="chip bg-color">随笔</span>
+                        <a href="/tags/封装/" target="_blank">
+                            <span class="chip bg-color">封装</span>
                         </a>
                         
                     </div>
@@ -426,8 +427,8 @@
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/随笔/" class="post-category" target="_blank">
-                            随笔
+                        <a href="/categories/c/" class="post-category" target="_blank">
+                            c++
                         </a>
                         
                     </div>
@@ -438,7 +439,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2018-01-22
+                    2019-10-23
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -452,14 +453,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    8
+                    525
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
                 
@@ -475,13 +476,174 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <div align="middle"><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=407679465&auto=1&height=66"></iframe></div>
-# 2017
-![](1.jpg)
-![](2.jpg)
-![](3.jpg)
+                <blockquote>
+<p>类的定义与对象实例化</p>
+<p>string类型及属性封装</p>
+<p>类外定义</p>
+<p>构造函数与初始化列表</p>
+<p>析构函数</p>
+</blockquote>
+<h1 id="类和对象"><a href="#类和对象" class="headerlink" title="类和对象"></a>类和对象</h1><p>类是一个抽象的概念，而对象是一个具体的概念。类是根据对象抽象而来，根据不同的目的，同一对象抽象出来的类也可能不尽相同。下面有一个简单的类的示例:</p>
+<pre class="line-numbers language-c++"><code class="language-c++">#include<iostream>
+#include<string>
+class dog{
+    public:
+        void eat();
+    private:
+        int age;
+        string name;
+};<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>上面定义了一个简单的类，他有数据成员和成员函数。但是当人们使用这个类的时候，只会关心他用到的部分函数，不需要搞明白所有的成员函数。<code>c++</code>中为了进行区分，引进了访问修饰符的概念。在这里用到了两个访问修饰符，分别为<code>public</code>和<code>private</code>。其中<code>public</code>供用户外部调用。而这种也成为<strong>封装</strong>。即只给用户呈现关心的部分，用<code>public</code>来进行修饰。</p>
+<h1 id="对象实例化"><a href="#对象实例化" class="headerlink" title="对象实例化"></a>对象实例化</h1><p>类是一个模板，计算机根据类制造对象就是对象的实例化。有两种方法可供选择，分别是从栈中实例化和从堆中实例化。</p>
+<h2 id="从栈中实例化"><a href="#从栈中实例化" class="headerlink" title="从栈中实例化"></a>从栈中实例化</h2><pre class="line-numbers language-c++"><code class="language-c++">class TV{
+  public:
+    char name[20];
+    int type;
 
-<h1 id="2018"><a href="#2018" class="headerlink" title="2018"></a>2018</h1>
+    void changeVol();
+    void power();
+};<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-c++"><code class="language-c++">#include<iostream>
+int main()
+{
+    TV tv;     //对象的实例化
+    Tv tv[20]; //对象数组的实例化
+    return 0；
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="从堆中实例化"><a href="#从堆中实例化" class="headerlink" title="从堆中实例化"></a>从堆中实例化</h2><pre class="line-numbers language-c++"><code class="language-c++">int main(){
+    TV *p = new TV();
+    TV *q = new TV[20];
+    delete p;
+    delete []q;
+    return 0;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h1 id="对象成员的访问"><a href="#对象成员的访问" class="headerlink" title="对象成员的访问"></a>对象成员的访问</h1><p>栈实例化的对象访问对象成员</p>
+<pre class="line-numbers language-c++"><code class="language-c++">#include<iostream>
+int main()
+{
+    TV tv;     //对象的实例化
+    Tv tv[20]; //对象数组的实例化
+    tv.type = 0;
+    tv.changeVol();
+    return 0;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>堆实例化的对象访问对象成员</p>
+<pre class="line-numbers language-c++"><code class="language-c++">#include<iostream>
+int main(){
+    TV *p = new TV();
+    TV *q = new TV[20];
+    p->type = 0;
+    p->changeVol();
+    delete p;
+    delete []q;
+    return 0;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>堆实例化的对象数组访问对象成员</p>
+<pre class="line-numbers language-c++"><code class="language-c++">#include<iostream>
+int main(){
+    TV *p = new TV[20];
+    for(int i = 0; i < 5; i++){
+        p[i]->type = 0;
+        p[i]->changeVol();
+    }
+    delete []p;
+    p = NULL;
+    return 0;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h1 id="初始string"><a href="#初始string" class="headerlink" title="初始string"></a>初始<code>string</code></h1><p>从一个小的示例开始</p>
+<pre class="line-numbers language-c++"><code class="language-c++">#include<iostream>
+#include<string>
+using namespace std;
+int main(){
+    string name = "zhangsan";
+    string hobby("football");
+    cout << name << hobby << endl;
+    return 0;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="初始化string对象的方式"><a href="#初始化string对象的方式" class="headerlink" title="初始化string对象的方式"></a>初始化<code>string</code>对象的方式</h2><table>
+<thead>
+<tr>
+<th>使用方法</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>string s1;</code></td>
+<td><code>s1</code>为空字符串</td>
+</tr>
+<tr>
+<td><code>string s2(&quot;abc&quot;);</code></td>
+<td>用字符串字面值初始化<code>s2</code></td>
+</tr>
+<tr>
+<td><code>string s3(s2);</code></td>
+<td>将<code>s3</code>初始化为<code>s2</code> 的一个副本</td>
+</tr>
+<tr>
+<td><code>string s4(n, &#39;c&#39;)</code></td>
+<td>将<code>s4</code>初始化为字符<code>c</code>的<code>n</code>个副本</td>
+</tr>
+</tbody></table>
+<h2 id="string的常用操作"><a href="#string的常用操作" class="headerlink" title="string的常用操作"></a><code>string</code>的常用操作</h2><table>
+<thead>
+<tr>
+<th>使用方法</th>
+<th>介绍</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>s.empty()</code></td>
+<td>判断字符串是否为空，为空返回<code>true</code></td>
+</tr>
+<tr>
+<td><code>s.size()</code></td>
+<td>返回字符串的个数</td>
+</tr>
+<tr>
+<td><code>s[n]</code></td>
+<td>返回<code>s</code>中位置为<code>n</code>的字符，位置从<code>0</code>开始</td>
+</tr>
+<tr>
+<td><code>s1+s2</code></td>
+<td>将两个字符串连接成新串，返回新生成的串</td>
+</tr>
+<tr>
+<td><code>s1 = s2</code></td>
+<td>将<code>s1</code>的内容替换成<code>s2</code>的副本</td>
+</tr>
+<tr>
+<td><code>v1 == v2</code></td>
+<td>判定相等，相等返回<code>true</code>，反之返回<code>false</code></td>
+</tr>
+<tr>
+<td><code>v1!=v2</code></td>
+<td>判定不等，不等返回<code>true</code>，反之返回<code>false</code></td>
+</tr>
+</tbody></table>
+<h2 id="string需要注意的地方"><a href="#string需要注意的地方" class="headerlink" title="string需要注意的地方"></a><code>string</code>需要注意的地方</h2><pre class="line-numbers language-c++"><code class="language-c++">string s1 = "hello";
+string s2("world");
+string s3 = s1 + s2;
+string s4 = "hello" + s2;
+string s5 = "hello" + s2 + "world";
+string s6 = "hello" + "world"          //错误使用，相加的至少有一个是string类型
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h1 id="数据的封装"><a href="#数据的封装" class="headerlink" title="数据的封装"></a>数据的封装</h1><p>面向对象的思想，倾向于使用成员函数的方式对对象进行操作，而不是直接访问数据成员。这样的好处有很多。比方说</p>
+<ul>
+<li>某些变量我们只想给它只读属性，并不想给它其他的操作，这个时候就可以定义一个成员函数来返回它的值</li>
+<li>当设定某个变量的时候，我们可能需要对变量的赋值进行判断合理之后再进行赋值，这个时候也需要设定成员函数</li>
+</ul>
+<h1 id="类内定义和内联函数"><a href="#类内定义和内联函数" class="headerlink" title="类内定义和内联函数"></a>类内定义和内联函数</h1><h2 id="内联函数"><a href="#内联函数" class="headerlink" title="内联函数"></a>内联函数</h2><p>内联函数使用<code>inline</code>修饰符，将逻辑比较简单的函数修饰为内联之后，在调用的时候会直接使用函数体之中的片段，省略掉调用的开销。但是对于逻辑比较复杂的函数，即使强制指定为<code>inline</code>，编译器也不会将其当作内联函数来处理。</p>
+<h2 id="类内定义"><a href="#类内定义" class="headerlink" title="类内定义"></a>类内定义</h2><p>类内定义是指将函数体的实现放在类的内部，这个时候编译器就会将其当作内联函数来进行处理。</p>
+<pre class="line-numbers language-c++"><code class="language-c++">class Dog{
+    public:
+        void set_name(string _name){
+            //to do
+            name = _name;
+        }
+    private:
+        string name;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
             </div>
             <hr />
 
@@ -639,9 +801,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《test》
+                    《C++封装(上)》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2018/01/22/2017-conclusion/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/10/23/c-feng-zhuang-shang/" property="cc:attributionName"
                rel="cc:attributionURL">
                 shaowb
             </a> 采用
@@ -682,7 +844,7 @@
         repo: 'jianzhen.github.io',
         owner: 'ShaoAndrews',
         admin: "ShaoAndrews",
-        id: '2018/01/22/2017-conclusion/',
+        id: '2019/10/23/c-feng-zhuang-shang/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -965,50 +1127,55 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/10/20/ce-shi-mi-ma/">
+                <a href="/2019/10/23/c-feng-zhuang-shang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="测试密码">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="C++封装(上)">
                         
-                        <span class="card-title">测试密码</span>
+                        <span class="card-title">C++封装(上)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            测试开文件#include
-int main()
-{
+                            
+类的定义与对象实例化
+string类型及属性封装
+类外定义
+构造函数与初始化列表
+析构函数
 
-    cout 
+类和对象类是一个抽象的概念，而对象是一个具体的概念。类是根据对象抽象而来，根据不同的目的，同一对象抽象出来的类也可能不尽相同。下面有一个简单的类
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-20
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-23
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/shell/" class="post-category" target="_blank">
-                                    shell
+                            <a href="/categories/c/" class="post-category" target="_blank">
+                                    c++
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/python/" target="_blank">
-                        <span class="chip bg-color">python</span>
+                    <a href="/tags/封装/" target="_blank">
+                        <span class="chip bg-color">封装</span>
                     </a>
                     
                 </div>
@@ -1019,46 +1186,49 @@ int main()
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2018/01/22/2017-conclusion/">
+                <a href="/2019/10/21/fei-root-quan-xian-an-zhuang-pip-he-qi-ta-python-bao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="test">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="非root权限安装pip和其他python包">
                         
-                        <span class="card-title">test</span>
+                        <span class="card-title">非root权限安装pip和其他python包</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            时间过得很快，终于等到放寒假了，虽然这几个月没有课，天天和放假也没啥区别呢。细数一下，还有5个月就要毕业了吧，大一刚入学的场景却依然清楚地记得，转眼间就成了老学长了呢。闲来无事，随便写写，有感而发，无病呻吟而已。
+                            
+当拿到服务器账号却没有root权限的时候，导致很多安装受到阻碍。这里给出一种创建虚拟环境的办法进行解决，主要原理在于圈定自己的一个运行范围。
+
+安装pipwget https://bootstrap.pypa.io/get-pip.py
+
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-01-22
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-21
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/随笔/" class="post-category" target="_blank">
-                                    随笔
+                            <a href="/categories/python/" class="post-category" target="_blank">
+                                    python
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/随笔/" target="_blank">
-                        <span class="chip bg-color">随笔</span>
+                    <a href="/tags/安装/" target="_blank">
+                        <span class="chip bg-color">安装</span>
                     </a>
                     
                 </div>
@@ -1205,6 +1375,13 @@ int main()
 
 </main>
 
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
 
     <footer class="page-footer bg-color">
     <div class="container row center-align">

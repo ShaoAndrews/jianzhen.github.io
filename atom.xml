@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://shaowb.com/"/>
-  <updated>2019-10-21T01:13:53.146Z</updated>
+  <updated>2019-10-23T00:35:09.324Z</updated>
   <id>http://shaowb.com/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C++封装(上)</title>
+    <link href="http://shaowb.com/2019/10/23/c-feng-zhuang-shang/"/>
+    <id>http://shaowb.com/2019/10/23/c-feng-zhuang-shang/</id>
+    <published>2019-10-23T00:21:23.000Z</published>
+    <updated>2019-10-23T00:35:09.324Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;类的定义与对象实例化&lt;/p&gt;
+&lt;p&gt;string类型及属性封装&lt;/p&gt;
+&lt;p&gt;类外定义&lt;/p&gt;
+&lt;p&gt;构造函数与初始化列表&lt;/p&gt;
+&lt;p&gt;析构函数&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;类和对象&quot;&gt;&lt;a href=&quot;#类和对象&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="c++" scheme="http://shaowb.com/categories/c/"/>
+    
+    
+      <category term="封装" scheme="http://shaowb.com/tags/%E5%B0%81%E8%A3%85/"/>
+    
+  </entry>
   
   <entry>
     <title>非root权限安装pip和其他python包</title>
