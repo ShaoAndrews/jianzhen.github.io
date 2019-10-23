@@ -54,31 +54,6 @@
     
     
     <entry>
-      <title>测试密码</title>
-      <link href="/2019/10/20/ce-shi-mi-ma/"/>
-      <url>/2019/10/20/ce-shi-mi-ma/</url>
-      
-        <content type="html"><![CDATA[<h1 id="测试开文件"><a href="#测试开文件" class="headerlink" title="测试开文件"></a>测试开文件</h1><pre class="line-numbers language-c++"><code class="language-c++">#include<iostream>int main(){    cout << "ok"<<endl;    return 0;}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> shell </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> python </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>test</title>
       <link href="/2018/01/22/2017-conclusion/"/>
       <url>/2018/01/22/2017-conclusion/</url>
