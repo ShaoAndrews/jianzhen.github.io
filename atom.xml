@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://shaowb.com/"/>
-  <updated>2019-10-23T00:35:09.324Z</updated>
+  <updated>2019-10-26T02:50:49.352Z</updated>
   <id>http://shaowb.com/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>opencv-python使用</title>
+    <link href="http://shaowb.com/2019/10/26/opencv-python-shi-yong/"/>
+    <id>http://shaowb.com/2019/10/26/opencv-python-shi-yong/</id>
+    <published>2019-10-26T02:46:09.000Z</published>
+    <updated>2019-10-26T02:50:49.352Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;刷新屏幕画板&quot;&gt;&lt;a href=&quot;#刷新屏幕画板&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="python" scheme="http://shaowb.com/categories/python/"/>
+    
+    
+      <category term="opencv" scheme="http://shaowb.com/tags/opencv/"/>
+    
+  </entry>
+  
+  <entry>
     <title>C++封装(上)</title>
     <link href="http://shaowb.com/2019/10/23/c-feng-zhuang-shang/"/>
     <id>http://shaowb.com/2019/10/23/c-feng-zhuang-shang/</id>
     <published>2019-10-23T00:21:23.000Z</published>
-    <updated>2019-10-23T00:35:09.324Z</updated>
+    <updated>2019-10-24T00:50:34.007Z</updated>
     
     <summary type="html">
     
